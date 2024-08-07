@@ -1,0 +1,65 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* text colors */
+  --accent-cl: #ff6c00;
+  --main-tx-cl: #555;
+  --secondary-tx-cl: ;
+
+  /* background colors */
+  --main-bg-cl: #fff;
+  --secondary-bg-cl: #f7f7f7;
+  --dark-bg-cl: #191c26;
+}
+
+body {
+  font-family: var(--main-font);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--main-tx-cl);
+
+  background-color: bisque;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  /* line-height: 16px; */
+  letter-spacing: 0.1em;
+
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+}
+
+/* .section-title {
+  color: #303030;
+} */
+
+/* Основной цвет текста   #303030  */
+/* Вторичный цвет текста #555 */
+/* Белый цвет  #fff  */
+/* акцент #ff6c00  */
+
+/* Навигация */
+
+.navigation .link.current {
+  color: #ff6c00;
+}
+
+.navigation .link {
+  color: #fff;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+  color: #ff6c00;
+}
