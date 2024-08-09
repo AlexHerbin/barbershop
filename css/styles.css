@@ -5,12 +5,17 @@
   /* text colors */
   --accent-cl: #ff6c00;
   --main-tx-cl: #555;
-  --secondary-tx-cl: ;
+  --secondary-tx-cl: #fff;
 
   /* background colors */
   --main-bg-cl: #fff;
   --secondary-bg-cl: #f7f7f7;
   --dark-bg-cl: #191c26;
+
+  /* btn color */
+
+  --btn-light-mode: #fff;
+  --btn-dark-mode: #303030;
 }
 
 body {
@@ -20,36 +25,59 @@ body {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--main-tx-cl);
 
-  background-color: bisque;
+  color: var(--main-tx-cl);
 }
 
 .link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn {
+  font-family: inherit;
+
   font-weight: 600;
   font-size: 12px;
-  /* line-height: 16px; */
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
+  line-height: 1.33;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  text-decoration: none;
-
+.btn:hover,
+.btn:focus {
   color: #fff;
+  background-color: var(--accent-cl);
 }
 
-.list {
-  list-style: none;
+.btn-mode-light {
+  color: var(--btn-light-mode);
 }
 
-/* .section-title {
-  color: #303030;
-} */
+.btn-mode-dark {
+  color: var(--btn-dark-mode);
+}
 
-/* Основной цвет текста   #303030  */
-/* Вторичный цвет текста #555 */
-/* Белый цвет  #fff  */
-/* акцент #ff6c00  */
+/* ХЕДЕР  */
+
+.header {
+  background-color: var(--dark-bg-cl);
+}
 
 /* Навигация */
+
+.navigation-link,
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-tx-cl);
+}
 
 .navigation .link.current {
   color: #ff6c00;
