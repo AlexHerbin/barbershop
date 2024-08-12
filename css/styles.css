@@ -29,9 +29,27 @@ body {
   color: var(--main-tx-cl);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
+}
+
+.list {
+  list-style: none;
 }
 
 .btn {
@@ -56,8 +74,21 @@ body {
   color: var(--btn-light-mode);
 }
 
-.btn-mode-dark {
-  color: var(--btn-dark-mode);
+.slider-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-align: right;
+
+  color: #fff;
+  background-color: transparent;
+}
+
+.slider-btn-disable {
+  text-align: left;
+
+  color: rgba(157, 164, 189, 0.6);
 }
 
 /* ХЕДЕР  */
@@ -66,7 +97,7 @@ body {
   background-color: var(--dark-bg-cl);
 }
 
-/* Навигация */
+/* НАВИГАЦИЯ*/
 
 .navigation-link,
 .header-phone {
@@ -89,5 +120,98 @@ body {
 
 .navigation .link:hover,
 .navigation .link:focus {
-  color: #ff6c00;
+  color: var(--accent-cl);
+}
+
+/* ГЕРОЙ */
+
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero .link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
+
+.link-social:hover,
+.link-social:focus {
+  color: var(--accent-cl);
+}
+
+.hero .uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero .title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #fff;
+}
+
+.hero .subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+/* О НАС */
+
+.about .uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+
+.about .title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about .subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.discription {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.about .btn-dark-mode {
+  color: var(--btn-dark-mode);
+}
+
+.about .btn-dark-mode:hover,
+.about .btn-dark-mode:focus {
+  color: var(--btn-light-mode);
+  background-color: var(--accent-cl);
 }
